@@ -11,9 +11,9 @@ COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Install git and clone the Git repository
-RUN apt-get update && \
-    apt-get install -y git && \
-    git clone https://github.com/tylerebowers/Schwab-API-Python.git
+# RUN apt-get update && \
+#     apt-get install -y git && \
+#     git clone https://github.com/tylerebowers/Schwab-API-Python.git
 
 # Set the working directory to the cloned repository
 WORKDIR /app/Schwab-API-Python
