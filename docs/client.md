@@ -22,7 +22,7 @@ from dotenv import load_dotenv
 import os
 
 load_dotenv()
-client = schwabdev.Client(os.getenv("app_key"), os.getenv("app_secret"))
+client = schwabdev.Client(os.getenv("APP_KEY"), os.getenv("APP_SECRET"))
 ````
 The Schwab API uses two tokens to use the api:
 * Refresh token - valid for 7 days, used to "refresh" the access token.
@@ -34,7 +34,3 @@ The Function `client.update_tokens_auto()` will keep the access token updated by
 If you want to access the access or refresh tokens you can call `client.access_token` or `client.refresh_token`.
 
 The api calls can be accessed via `client.XXXX()`, all calls are outlined in `tests/api_demo.py` or `docs/api.md`
-
-
-
-

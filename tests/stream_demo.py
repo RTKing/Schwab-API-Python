@@ -4,7 +4,7 @@ import os
 
 
 def main():
-    client = schwabdev.Client(os.getenv('app_key'), os.getenv('app_secret'), os.getenv('callback_url'))
+    client = schwabdev.Client(os.getenv('APP_KEY'), os.getenv('APP_SECRET'), os.getenv('CALLBACK_URL'))
     client.update_tokens_auto()  # update tokens automatically (except refresh token)
 
     """ 

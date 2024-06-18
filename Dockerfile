@@ -27,6 +27,7 @@ RUN pip install .
 # Set environment variables (these will be overridden by the docker run command)
 ENV APP_KEY=default_app_key
 ENV APP_SECRET=default_app_secret
+ENV CALLBACK_URL=https://127.0.0.1
 
 # Command to run the container
 CMD ["python3"]

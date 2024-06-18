@@ -1,3 +1,4 @@
 schwabdev
 requests
 websockets
+python-dotenv
