@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 
-VERSION = '2.0.2'
-DESCRIPTION = 'Schwab API Python Client (unofficial)'
+VERSION = '2.4.0' # Also update version in api.py
+DESCRIPTION = 'An easy and lightweight wrapper for using the Charles Schwab API.'
 with open('README.md', 'r') as f:
     LONG_DESCRIPTION = f.read()
 
@@ -10,6 +10,7 @@ setup(
     version=VERSION,
     author='Tyler Bowers',
     author_email='tylerebowers@gmail.com',
+    url='https://github.com/tylerebowers/Schwab-API-Python',
     license='MIT',
     description=DESCRIPTION,
     long_description=LONG_DESCRIPTION,
@@ -19,6 +20,7 @@ setup(
     install_requires=[
         'requests',
         'websockets',
+        'cryptography',
     ],
     keywords=['python', 'schwab', 'api', 'client', 'finance', 'trading', 'stocks', 'equities', 'options', 'forex', 'futures'],
     classifiers=[
