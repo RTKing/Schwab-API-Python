@@ -18,7 +18,7 @@ def main():
     logging.basicConfig(level=logging.INFO)
 
     # create client
-    client = schwabdev.Client(os.getenv('app_key'), os.getenv('app_secret'), os.getenv('callback_url'))
+    client = schwabdev.Client(os.getenv('APP_KEY'), os.getenv('APP_SECRET'), os.getenv('CALLBACK_URL'))
 
     print("\nGet account number and hashes for linked accounts")
     linked_accounts = client.account_linked().json()

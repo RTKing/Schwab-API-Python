@@ -29,6 +29,12 @@ client = schwabdev.Client('Your app key', 'Your app secret')  #create a client
 print(client.account_linked().json()) #make api calls
 ```
 
+## Docker Build
+
+```
+docker build -t rtking/schwab-api:latest .
+```
+
 ## What can this program do?
  - Authenticate and access the full api. 
  - Automatic token management and "access token" updates.

@@ -30,4 +30,4 @@ ENV APP_SECRET=default_app_secret
 ENV CALLBACK_URL=https://127.0.0.1
 
 # Command to run the container
-CMD ["python3"]
+CMD ["python", "examples/api_demo.py"]

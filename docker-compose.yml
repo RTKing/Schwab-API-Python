@@ -1,0 +1,10 @@
+services:
+  schwab:
+    container_name: schwab-api
+    image: rtking/schwab-api:latest
+    environment:
+      - APP_KEY=${APP_KEY}
+      - APP_SECRET=${APP_SECRET}
+      - CALLBACK_URL=${CALLBACK_URL}
+    volumes:
+      - ${CONFIG}/schwab-api/tokens.json:/app/Schwab-API-Python/tokens.json
